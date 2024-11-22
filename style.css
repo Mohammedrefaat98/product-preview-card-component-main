@@ -1,0 +1,124 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+html,body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1vw;
+}
+
+.left-card img:first-child{
+    display: block;
+    border-radius: 1vw 0 0 1vw;
+}
+.left-card img:last-child{
+    display: none;
+}
+.right-card{
+    padding: 2vw;
+}
+.right-card h1{
+    width: 60%;
+}
+.right-card p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+.right-card p:first-child{
+    text-transform:uppercase;
+    letter-spacing: 0.25vw;
+}
+.right-card p:nth-child(3){
+    width: 90%;
+}
+.price{
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    align-items: center;
+}
+
+h1,h2{
+    font-family: "Fraunces", serif;
+}
+
+.price p{
+    text-decoration: line-through;
+}
+.price h2{
+    color: hsl(158, 36%, 37%);
+}
+
+button{
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: 0;
+    border-radius: 0.5vw;
+    padding: 1vw 2vw;
+}
+
+@media (max-width: 430px) {
+    .card{
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .left-card img:first-child{
+        display: none;
+    }
+    .left-card img:last-child{
+        display: block;
+        border-radius: 1vw 1vw 0 0;
+    }
+    .right-card h1{
+        width: 100%;
+    }
+    .right-card p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+    }
+    .right-card p:first-child{
+        text-transform:uppercase;
+        letter-spacing: 0.25vw;
+    }
+    .right-card p:nth-child(3){
+        width: 100%;
+    }
+    .price{
+        display: grid;
+        grid-template-columns: 0.4fr 0.4fr;
+        align-items: center;
+    }
+    
+    h1,h2{
+        font-family: "Fraunces", serif;
+    }
+    
+    .price p{
+        text-decoration: line-through;
+    }
+    .price h2{
+        color: hsl(158, 36%, 37%);
+    }
+    
+    button{
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        border: 0;
+        border-radius: 1vw;
+        padding: 2vw 4vw;
+        width: 100%;
+    }
+    
+  }
