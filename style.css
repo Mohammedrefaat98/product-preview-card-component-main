@@ -13,7 +13,8 @@ html,body{
 .card{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 50%;
+    width: clamp(600px,44%,44%);
+    height: clamp(450px,40%,40%);
     background-color: hsl(0, 0%, 100%);
     border-radius: 1vw;
 }
@@ -29,7 +30,7 @@ html,body{
     padding: 2vw;
 }
 .right-card h1{
-    width: 60%;
+    width: 80%;
 }
 .right-card p{
     font-family: "Montserrat", sans-serif;
@@ -41,7 +42,7 @@ html,body{
     letter-spacing: 0.25vw;
 }
 .right-card p:nth-child(3){
-    width: 90%;
+    width: 100%;
 }
 .price{
     display: grid;
@@ -71,7 +72,8 @@ button{
 @media (max-width: 430px) {
     .card{
         grid-template-columns: 1fr;
-        width: 80%;
+        width: 90%;
+        height: auto;
     }
     .left-card img:first-child{
         display: none;
