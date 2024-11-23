@@ -18,7 +18,9 @@ html,body{
     background-color: hsl(0, 0%, 100%);
     border-radius: 1vw;
 }
-
+.left-card img{
+    width:100%
+}
 .left-card img:first-child{
     display: block;
     border-radius: 1vw 0 0 1vw;
